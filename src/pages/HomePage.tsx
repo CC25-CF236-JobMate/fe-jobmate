@@ -4,7 +4,9 @@ import Footer from '../components/Footer';
 import HomepageContent from '../components/HomepageContent';
 import SectionAbout from '../components/SectionAbout';
 import SectionStats from '../components/SectionStats';
-import WhyJobmateSection from '../components/WhyJobMateSection';
+import WhyJobmateSection from '../components/WhyJobmateSection';
+import LowonganTerbaru from "../components/LowonganTerbaru.tsx";
+import { jobs as allJobs } from '../data/jobData'; // ✅ jobs = value
 
 const HomePage: React.FC = () => {
   return (
@@ -15,8 +17,9 @@ const HomePage: React.FC = () => {
         <SectionAbout />
         <WhyJobmateSection />
         <SectionStats />
-        
-        {/* Nanti tambahin section lainnya di bawah sini */}
+          <LowonganTerbaru showHeader={true} showButton={true} jobs={allJobs} />
+
+              {/* Nanti tambahin section lainnya di bawah sini */}
       </main>
       <Footer />
     </div>

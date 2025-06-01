@@ -15,12 +15,12 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
 
         {/* Center: Menu */}
         <nav className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center space-x-6 text-gray-700 font-medium text-sm">
-          <a href="#" className="hover:text-blue-600">Tentang JobMate</a>
-          <a href="#" className="hover:text-blue-600">JobSearch</a>
+          <a href="/" className="hover:text-blue-600">Tentang JobMate</a>
+          <a href="/jobsearch" className="hover:text-blue-600">JobSearch</a>
+          <a href="/cvreview" className="hover:text-blue-600">CV Review</a>
           <div className="relative group">
             <button className="hover:text-blue-600">Layanan ▾</button>
             <div className="absolute hidden group-hover:block mt-1 bg-white shadow rounded-2xl text-sm p-2 z-10 w-50">
-              <a href="#" className="block px-4 py-1 hover:bg-blue-50">CV Review</a>
               <a href="#" className="block px-4 py-1 hover:bg-blue-50">JobChat Mate Bot</a>
               <a href="#" className="block px-4 py-1 hover:bg-blue-50">AI Interview</a>
               <a href="#" className="block px-4 py-1 hover:bg-blue-50">JobModul</a>

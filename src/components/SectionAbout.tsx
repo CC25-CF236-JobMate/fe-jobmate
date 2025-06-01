@@ -30,7 +30,7 @@ const SectionAbout: React.FC = () => {
 
           <div className="space-y-3">
             <a
-              href="#"
+              href="/jobsearch"
               className="flex items-center font-semibold text-blue-900 hover:underline"
             >
               Cari Lowongan Pekerjaan Inklusif
